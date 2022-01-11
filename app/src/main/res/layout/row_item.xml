@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="2dp"
+    android:layout_marginBottom="-2dp"
+    card_view:cardCornerRadius="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/food_column"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/app_name"
+            android:adjustViewBounds="true"/>
+
+
+        <TextView
+            android:id="@+id/txt_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="Keyword"
+            android:textSize="0sp" />
+
+        <TextView
+            android:id="@+id/txt_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/txt_keyword"
+            android:text="Judul"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:textColor="@color/htm1"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <TextView
+            android:id="@+id/txt_penulis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_judul"
+            android:text="Penulis"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/abu3"
+            android:layout_marginHorizontal="10dp"
+            android:textSize="12sp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterFragment">
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scrollbarThumbVertical="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_dft_akn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Daftar Akun"
+            android:textColor="@color/hijauBR"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Masukkan Nama Lengkap"
+            android:inputType="text"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu1"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_nama"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nama" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Masukkan Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu1"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_nama"
+            app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+        <TextView
+            android:id="@+id/txt_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Nama Lengkap"
+            android:textColor="@color/htm2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_dft_akn" />
+
+        <TextView
+            android:id="@+id/txt_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Email"
+            android:textColor="@color/htm2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_nama"
+            app:layout_constraintTop_toBottomOf="@+id/edt_nama" />
+
+
+        <TextView
+            android:id="@+id/txt_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Password"
+            android:textColor="@color/htm2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_nama"
+            app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_background_hijau"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="@color/pth1"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_ulangi_password" />
+
+        <LinearLayout
+            android:id="@+id/link_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_register">
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:fontFamily="@font/poppins_regular"
+              android:text="Sudah Punya akun?"
+              android:textColor="@color/htm2"
+              android:textSize="14sp" />
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="5dp"
+              android:layout_weight="1"
+              android:fontFamily="@font/poppins_bold"
+              android:text="Login Sekarang"
+              android:textColor="@color/hijauBR"
+              android:textSize="14sp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Masukkan Password"
+            android:inputType="textPassword"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu1"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_nama"
+            app:layout_constraintTop_toBottomOf="@+id/txt_password" />
+
+        <TextView
+            android:id="@+id/txt_ulang_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Ulangi Password"
+            android:textColor="@color/htm2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_nama"
+            app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+        <EditText
+            android:id="@+id/edt_ulangi_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:hint="Konfirmasi Password"
+            android:inputType="textPassword"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu1"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_nama"
+            app:layout_constraintTop_toBottomOf="@+id/txt_ulang_password" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+  </ScrollView>
+
+</FrameLayout>

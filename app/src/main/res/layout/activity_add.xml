@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:background="@color/white">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+      android:paddingBottom="75dp"
+      android:scrollbarThumbVertical="@null">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/txtAddRsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:text="Tambah Resep"
+            android:textColor="@color/hijauBR"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/img_back" />
+
+        <TextView
+            android:id="@+id/txt_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Judul :"
+            android:textColor="@color/htm1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAddRsp" />
+
+        <EditText
+            android:id="@+id/edt_judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_background_putih"
+            android:ems="10"
+            android:fontFamily="@font/poppins_medium"
+            android:hint="Tuliskan Judul"
+            android:inputType="text"
+            android:paddingVertical="5dp"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu2"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/txt_judul" />
+
+        <TextView
+            android:id="@+id/txt_keyword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Keyword :"
+            android:textColor="@color/htm1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/edt_judul" />
+
+        <EditText
+            android:id="@+id/edt_keyword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_background_putih"
+            android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Keyword"
+            android:inputType="text"
+            android:paddingVertical="5dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu2"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/txt_keyword" />
+
+        <TextView
+            android:id="@+id/txt_deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Deskripsil :"
+            android:textColor="@color/htm1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/edt_keyword" />
+
+        <EditText
+            android:id="@+id/edt_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_background_putih"
+            android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Tulis deskripsi"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="1"
+            android:paddingVertical="5dp"
+            android:scrollbars="vertical"
+
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu2"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/txt_deskripsi" />
+
+        <TextView
+            android:id="@+id/txtBhnBhn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Bahan-bahan :"
+            android:textColor="@color/htm1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/edt_deskripsi" />
+
+        <EditText
+            android:id="@+id/edt_bahan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_background_putih"
+            android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Tulis Bahan yang dibutuhkan"
+            android:inputType="textMultiLine"
+            android:maxLines="15"
+            android:minLines="1"
+            android:paddingVertical="5dp"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu2"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/txtBhnBhn" />
+
+        <TextView
+            android:id="@+id/txtCraMasak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Cara memasak :"
+            android:textColor="@color/htm1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/edt_bahan" />
+
+
+        <EditText
+            android:id="@+id/edt_cara"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/button_background_putih"
+            android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Tulis Langkah langkah"
+            android:inputType="textMultiLine"
+            android:maxLines="20"
+            android:minLines="1"
+            android:paddingVertical="5dp"
+            android:textColor="@color/htm2"
+            android:textColorHint="@color/abu2"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/txtCraMasak" />
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+  </ScrollView>
+
+
+  <LinearLayout
+      android:id="@+id/linearLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/menu_bacground"
+      android:gravity="center_horizontal"
+      android:orientation="horizontal"
+      android:paddingVertical="10dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent">
+
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background_putih_btn"
+        android:text="Reset"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/htm2" />
+
+    <Button
+        android:id="@+id/btn_upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/button_background_hijau"
+        android:text="Upload"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:textColor="@color/pth1" />
+
+
+  </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
