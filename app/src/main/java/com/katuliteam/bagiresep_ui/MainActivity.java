@@ -32,38 +32,31 @@ public class MainActivity extends AppCompatActivity {
     Bundle extras = getIntent().getExtras();
     if( extras != null && extras.getString("notify") != null ){
       Toast.makeText(this, extras.getString("notify"), Toast.LENGTH_SHORT).show();
-      setNonActiveMenu();
       setActiveMenu(menu_upload, R.drawable.ic_uploadt, new MyResepFragment());
     }
     if( extras != null && extras.getString("akun") != null && !extras.getString("akun").equals("")){
       Toast.makeText(this, extras.getString("akun"), Toast.LENGTH_SHORT).show();
-      setNonActiveMenu();
       setActiveMenu(menu_profile, R.drawable.ic_profilt, new ProfileFragment());
     }
     if( extras != null && extras.getString("akun") != null && extras.getString("akun").equals("") ){
-      setNonActiveMenu();
       setActiveMenu(menu_profile, R.drawable.ic_profilt, new ProfileFragment());
     }
 
 
     menu_home.setOnClickListener(v -> {
-      setNonActiveMenu();
       setActiveMenu(menu_home, R.drawable.ic_homet, new HomeFragment());
     });
 
     menu_upload.setOnClickListener(v -> {
-      setNonActiveMenu();
       setActiveMenu(menu_upload, R.drawable.ic_uploadt, new MyResepFragment());
     });
 
     menu_profile.setOnClickListener(v -> {
-      setNonActiveMenu();
       menu_profile.setImageResource(R.drawable.ic_profilt);
       setActiveMenu(menu_profile, R.drawable.ic_profilt, new ProfileFragment());
     });
 
     menu_about.setOnClickListener(v -> {
-      setNonActiveMenu();
       setActiveMenu(menu_about, R.drawable.ic_aboutt, new AboutFragment());
     });
 
@@ -85,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
   public void setActiveMenu(ImageView menu, @DrawableRes int source, @NonNull Fragment fragment)
   {
+    setNonActiveMenu();
     menu.setImageResource(source);
     getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, fragment).commit();
   }
