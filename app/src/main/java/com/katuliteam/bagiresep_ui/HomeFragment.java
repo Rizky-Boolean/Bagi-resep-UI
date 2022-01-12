@@ -99,10 +99,10 @@ public class HomeFragment extends Fragment {
     txtResult = vw.findViewById(R.id.txt_result);
     btnReset = vw.findViewById(R.id.btn_reset);
 
+    edtSearch = vw.findViewById(R.id.edt_search);
 
     showData(vw, "SELECT * FROM tbl_resep");
 
-    edtSearch = vw.findViewById(R.id.edt_search);
 
     // event kalo search diketik
     edtSearch.addTextChangedListener(new TextWatcher() {
@@ -144,6 +144,9 @@ public class HomeFragment extends Fragment {
   // show data function
   public void showData(View vw, String sqlQuery)
   {
+
+    txtResult.setTextSize(TypedValue.COMPLEX_UNIT_SP, 0);
+
     keyword_list = new ArrayList<>();
     judul_list = new ArrayList<>();
     penulis_list = new ArrayList<>();
@@ -189,16 +192,26 @@ public class HomeFragment extends Fragment {
 
               })
       );
-      btnReset.setBackgroundResource(R.drawable.ic_reset);
-      btnReset.setOnClickListener(v -> {
-        showData(vw, "SELECT * FROM tbl_resep");
-        edtSearch.setText(null);
-        btnReset.setBackgroundResource(0);
-      });
 
     }else{
       txtResult.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
     }
+
+    if( !edtSearch.getText().toString().isEmpty() ){
+      btnReset.setBackgroundResource(R.drawable.ic_reset);
+      btnReset.setOnClickListener(v -> {
+        edtSearch.setText(null);
+      });
+    }else{
+      btnReset.setBackgroundResource(0);
+    }
+
+    btnReset.setOnClickListener(v -> {
+      showData(vw, "SELECT * FROM tbl_resep");
+      edtSearch.setText(null);
+      btnReset.setBackgroundResource(0);
+    });
+
   }
 
 
