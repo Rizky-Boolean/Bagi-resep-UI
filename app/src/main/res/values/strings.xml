@@ -1,8 +1,14 @@
 <resources>
   <string name="app_name">Bagi Resep | Katuli</string>
   <string name="about_title">Tentang Aplikasi</string>
-  <string name="description_app_text">Katuli Team : Bagi Resep</string>
+  <string name="description_app_text">Bagi Resep</string>
+
+  <string name="description_app_text_pengertian">
+    Adalah aplikasi untuk  menyimpan resep dan saling berbagi resep antar user, user dapat melakukan Create Data, Update Data, dan Delete Data
+  </string>
+
   <string name="anggota_text">Anggota</string>
+  <string name="katuli_text">Katuli Team</string>
   <string name="developer_text">Yunus Febriansyah - 19312009\nM Rizky Fadhilah - 19312079</string>
 
 </resources>

@@ -1,13 +1,14 @@
 package com.katuliteam.bagiresep_ui;
 
+import androidx.annotation.DrawableRes;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.Toast;
-
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -32,39 +33,38 @@ public class MainActivity extends AppCompatActivity {
     if( extras != null && extras.getString("notify") != null ){
       Toast.makeText(this, extras.getString("notify"), Toast.LENGTH_SHORT).show();
       setNonActiveMenu();
-      menu_upload.setImageResource(R.drawable.ic_uploadt);
-      getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, new MyResepFragment()).commit();
+      setActiveMenu(menu_upload, R.drawable.ic_uploadt, new MyResepFragment());
     }
-    if( extras != null && extras.getString("akun") != null ){
+    if( extras != null && extras.getString("akun") != null && !extras.getString("akun").equals("")){
       Toast.makeText(this, extras.getString("akun"), Toast.LENGTH_SHORT).show();
       setNonActiveMenu();
-      menu_upload.setImageResource(R.drawable.ic_profilt);
-      getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, new ProfileFragment()).commit();
+      setActiveMenu(menu_profile, R.drawable.ic_profilt, new ProfileFragment());
+    }
+    if( extras != null && extras.getString("akun") != null && extras.getString("akun").equals("") ){
+      setNonActiveMenu();
+      setActiveMenu(menu_profile, R.drawable.ic_profilt, new ProfileFragment());
     }
 
 
     menu_home.setOnClickListener(v -> {
-      setNonActiveMenu();;
-      menu_home.setImageResource(R.drawable.ic_homet);
-      getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, new HomeFragment()).commit();
+      setNonActiveMenu();
+      setActiveMenu(menu_home, R.drawable.ic_homet, new HomeFragment());
     });
 
     menu_upload.setOnClickListener(v -> {
       setNonActiveMenu();
-      menu_upload.setImageResource(R.drawable.ic_uploadt);
-      getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, new MyResepFragment()).commit();
+      setActiveMenu(menu_upload, R.drawable.ic_uploadt, new MyResepFragment());
     });
 
     menu_profile.setOnClickListener(v -> {
       setNonActiveMenu();
       menu_profile.setImageResource(R.drawable.ic_profilt);
-      getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, new ProfileFragment()).commit();
+      setActiveMenu(menu_profile, R.drawable.ic_profilt, new ProfileFragment());
     });
 
     menu_about.setOnClickListener(v -> {
       setNonActiveMenu();
-      menu_about.setImageResource(R.drawable.ic_aboutt);
-      getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, new AboutFragment()).commit();
+      setActiveMenu(menu_about, R.drawable.ic_aboutt, new AboutFragment());
     });
 
     menuAdd.setOnClickListener(v -> {
@@ -72,15 +72,21 @@ public class MainActivity extends AppCompatActivity {
       startActivity(intentDisplay);
     });
 
-
   }
 
-  public void setNonActiveMenu()
+
+  private void setNonActiveMenu()
   {
     menu_home.setImageResource(R.drawable.ic_homef);
     menu_upload.setImageResource(R.drawable.ic_uploadf);
     menu_profile.setImageResource(R.drawable.ic_profilf);
     menu_about.setImageResource(R.drawable.ic_aboutf);
+  }
+
+  public void setActiveMenu(ImageView menu, @DrawableRes int source, @NonNull Fragment fragment)
+  {
+    menu.setImageResource(source);
+    getSupportFragmentManager().beginTransaction().replace(R.id.frg_hasil, fragment).commit();
   }
 
 

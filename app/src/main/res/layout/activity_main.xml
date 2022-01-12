@@ -33,28 +33,29 @@
         android:id="@+id/menu_home"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="25dp"
         android:src="@drawable/ic_homet" />
 
     <ImageView
         android:id="@+id/menu_upload"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="50dp"
+        android:layout_marginEnd="47dp"
         android:src="@drawable/ic_uploadf" />
 
     <ImageView
         android:id="@+id/menu_profile"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="47dp"
         android:src="@drawable/ic_profilf" />
 
     <ImageView
         android:id="@+id/menu_about"
         android:layout_width="44dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="25dp"
         android:src="@drawable/ic_aboutf" />
 
 
@@ -62,9 +63,10 @@
 
   <ImageView
       android:id="@+id/menu_add"
-      android:layout_width="72dp"
-      android:layout_height="72dp"
-      android:src="@drawable/menu_add"
+      android:layout_width="70dp"
+      android:layout_height="70dp"
+      android:src="@drawable/ic_add"
+      android:elevation="20dp"
       app:layout_constraintStart_toStartOf="@id/navigation"
       app:layout_constraintEnd_toEndOf="@id/navigation"
       app:layout_constraintBottom_toTopOf="@id/navigation"

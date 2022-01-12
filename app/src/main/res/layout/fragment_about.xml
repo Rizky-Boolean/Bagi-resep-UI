@@ -25,13 +25,13 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           app:cardBackgroundColor="@color/hijauBR"
-          android:layout_marginTop="40dp"
+          android:layout_marginTop="75dp"
           android:elevation="15dp"
           app:cardCornerRadius="15dp">
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
             android:src="@drawable/recipe_book"
             android:layout_gravity="center_horizontal"
             android:adjustViewBounds="true"/>
@@ -42,36 +42,56 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="@string/about_title"
-          android:textColorLink="@color/htm1"
+          android:textColor="@color/htm1"
           android:fontFamily="@font/poppins_medium"
+          android:textSize="12sp"
           android:layout_marginTop="10dp"/>
 
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginTop="40dp"
+          android:layout_marginTop="70dp"
           android:text="@string/description_app_text"
           android:textColor="@color/hijauBR"
-          android:textSize="20sp"
+          android:textSize="22sp"
           android:fontFamily="@font/poppins_semi_bold"/>
 
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/anggota_text"
-          android:layout_marginTop="10dp"
-          android:textColor="@color/htm1"
-          android:fontFamily="@font/poppins_medium"
-          android:textSize="20sp"/>
+          android:layout_marginTop="5dp"
+          android:text="@string/description_app_text_pengertian"
+          android:gravity="center"
+          android:textColor="@color/htm2"
+          android:textSize="12sp"
+          android:fontFamily="@font/poppins_medium"/>
 
       <TextView
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="@string/developer_text"
+          android:text="@string/katuli_text"
+          android:layout_marginTop="70dp"
           android:textColor="@color/hijauBR"
-          android:textSize="16sp"
+          android:fontFamily="@font/poppins_semi_bold"
+          android:textSize="18sp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/anggota_text"
+          android:layout_marginTop="5dp"
+          android:textColor="@color/htm1"
           android:fontFamily="@font/poppins_medium"
-          android:textAlignment="center"/>
+          android:textSize="16sp"/>
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:fontFamily="@font/poppins_medium"
+          android:text="@string/developer_text"
+          android:textAlignment="center"
+          android:textColor="@color/hijauBR"
+          android:textSize="14sp" />
 
 
     </LinearLayout>

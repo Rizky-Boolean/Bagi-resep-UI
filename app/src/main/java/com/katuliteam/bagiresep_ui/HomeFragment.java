@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -54,6 +55,7 @@ public class HomeFragment extends Fragment {
   EditText edtSearch;
   TextView txtResult;
   Button btnReset;
+  ImageView link_profile;
 
 
 
@@ -102,6 +104,15 @@ public class HomeFragment extends Fragment {
     btnReset.setVisibility(View.INVISIBLE);
 
     edtSearch = vw.findViewById(R.id.edt_search);
+
+    link_profile= vw.findViewById(R.id.link_profil);
+    link_profile.setOnClickListener(v -> {
+      intentDisplay = new Intent(getActivity(), MainActivity.class);
+      intentDisplay.putExtra("akun", "");
+      startActivity(intentDisplay);
+      getActivity().finish();
+    });
+
 
     showData(vw, "SELECT * FROM tbl_resep");
 
