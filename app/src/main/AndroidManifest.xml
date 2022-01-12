@@ -10,21 +10,20 @@
       android:supportsRtl="true"
       android:theme="@style/Theme.BagiResep_UI">
     <activity
+        android:name=".UbahPasswordActivity"
+        android:exported="false" />
+    <activity
         android:name=".DetailActivity"
         android:exported="true" />
     <activity
         android:name=".EditActivity"
         android:exported="true" />
-
-
     <activity
         android:name=".AddActivity"
-        android:exported="true"/>
+        android:exported="true" />
     <activity
         android:name=".AuthActivity"
         android:exported="true" />
-
-
     <activity
         android:name=".SplashActivity"
         android:exported="true">
@@ -34,11 +33,9 @@
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-
-
     <activity
         android:name=".MainActivity"
-        android:exported="true"/>
+        android:exported="true" />
   </application>
 
 </manifest>

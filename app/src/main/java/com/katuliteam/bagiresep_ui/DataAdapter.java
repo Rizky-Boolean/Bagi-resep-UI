@@ -42,6 +42,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
         viewHolder.judul.setText(judul);
         viewHolder.penulis.setText("Penulis : " + penulis);
 
+
     }
 
     @Override
@@ -55,7 +56,7 @@ public class DataAdapter extends RecyclerView.Adapter<DataAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            keyword = itemView.findViewById(R.id.txt_keyword);
+            keyword = itemView.findViewById(R.id.txt_password_baru);
             judul = itemView.findViewById(R.id.txt_judul);
             penulis = itemView.findViewById(R.id.txt_penulis);
         }

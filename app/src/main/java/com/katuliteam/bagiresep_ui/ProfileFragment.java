@@ -1,5 +1,6 @@
 package com.katuliteam.bagiresep_ui;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -36,7 +37,7 @@ public class ProfileFragment extends Fragment {
   Button btnLogout;
   Intent intentDisplay;
 
-  TextView nama, email;
+  TextView nama, email, linkGantiPassword, linkUbahAkun;
 
   public ProfileFragment() {
     // Required empty public constructor
@@ -86,6 +87,26 @@ public class ProfileFragment extends Fragment {
 
     nama.setText(cursor.getString(1));
     email.setText(cursor.getString(0));
+
+    linkUbahAkun = vw.findViewById(R.id.link_ubah_akun);
+    linkUbahAkun.setOnClickListener(v -> {
+
+      AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+      builder.setIcon(R.mipmap.ic_launcher);
+      builder.setTitle("Sabar yaa...");
+      builder.setMessage("Ini emang dibikin gak bagus :)");
+      builder.create().show();
+
+    });
+
+    linkGantiPassword = vw.findViewById(R.id.link_ganti_password);
+    linkGantiPassword.setOnClickListener(v -> {
+
+      intentDisplay = new Intent(getActivity(), UbahPasswordActivity.class);
+      intentDisplay.putExtra("email", cursor.getString(0));
+      startActivity(intentDisplay);
+
+    });
 
     btnLogout = vw.findViewById(R.id.btnLogout);
     btnLogout.setOnClickListener(v -> {

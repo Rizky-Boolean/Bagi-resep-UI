@@ -57,6 +57,26 @@
           android:textColor="@color/htm1"
           android:textSize="12sp"/>
 
+      <TextView
+          android:id="@+id/link_ubah_akun"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Ubah Akun"
+          android:layout_marginTop="20dp"
+          android:textColor="@color/hijauBR"
+          android:fontFamily="@font/poppins_semi_bold"
+          android:textSize="17sp"/>
+
+      <TextView
+          android:id="@+id/link_ganti_password"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Ganti Password"
+          android:layout_marginTop="5dp"
+          android:textColor="@color/hijauBR"
+          android:fontFamily="@font/poppins_semi_bold"
+          android:textSize="17sp"/>
+
       <Button
           android:id="@+id/btnLogout"
           style="@style/loginButton"

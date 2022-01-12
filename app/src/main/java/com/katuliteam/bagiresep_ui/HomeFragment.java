@@ -98,6 +98,8 @@ public class HomeFragment extends Fragment {
 
     txtResult = vw.findViewById(R.id.txt_result);
     btnReset = vw.findViewById(R.id.btn_reset);
+    btnReset.setVisibility(View.GONE);
+    btnReset.setVisibility(View.INVISIBLE);
 
     edtSearch = vw.findViewById(R.id.edt_search);
 
@@ -111,11 +113,14 @@ public class HomeFragment extends Fragment {
         //here is your code
         if( !edtSearch.getText().toString().isEmpty() ){
           btnReset.setBackgroundResource(R.drawable.ic_reset);
+          btnReset.setVisibility(View.VISIBLE);
           btnReset.setOnClickListener(v -> {
             edtSearch.setText(null);
           });
         }else{
           btnReset.setBackgroundResource(0);
+          btnReset.setVisibility(View.GONE);
+          btnReset.setVisibility(View.INVISIBLE);
         }
       }
       @Override
@@ -146,6 +151,8 @@ public class HomeFragment extends Fragment {
   {
 
     txtResult.setTextSize(TypedValue.COMPLEX_UNIT_SP, 0);
+    txtResult.setVisibility(View.GONE);
+    txtResult.setVisibility(View.INVISIBLE);
 
     keyword_list = new ArrayList<>();
     judul_list = new ArrayList<>();
@@ -195,10 +202,12 @@ public class HomeFragment extends Fragment {
 
     }else{
       txtResult.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+      txtResult.setVisibility(View.VISIBLE);
     }
 
     if( !edtSearch.getText().toString().isEmpty() ){
       btnReset.setBackgroundResource(R.drawable.ic_reset);
+      btnReset.setVisibility(View.VISIBLE);
       btnReset.setOnClickListener(v -> {
         edtSearch.setText(null);
       });
@@ -210,6 +219,8 @@ public class HomeFragment extends Fragment {
       showData(vw, "SELECT * FROM tbl_resep");
       edtSearch.setText(null);
       btnReset.setBackgroundResource(0);
+      btnReset.setVisibility(View.GONE);
+      btnReset.setVisibility(View.INVISIBLE);
     });
 
   }

@@ -7,21 +7,26 @@
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable-v24/button_background_hijau.xml" value="0.3765625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable-v24/button_background_putih.xml" value="0.3765625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable-v24/menu_bacground.xml" value="0.30833333333333335" />
+        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable-v24/menu_background.xml" value="0.2712962962962963" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/button_background_hijau.xml" value="0.3765625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/button_background_putih.xml" value="0.28425925925925927" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/button_background_putih_btn.xml" value="0.3765625" />
+        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/button_rounded.xml" value="0.2712962962962963" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_aboutf.xml" value="0.3765625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_bg_home.xml" value="0.30833333333333335" />
+        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_homet.xml" value="0.36925434116445355" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3765625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_profilf.xml" value="0.3765625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_resep.xml" value="0.3765625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_search.xml" value="0.3765625" />
+        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/drawable/ic_uploadf.xml" value="0.36925434116445355" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_add.xml" value="0.338768115942029" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_auth.xml" value="0.338768115942029" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_detail.xml" value="0.338768115942029" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_edit.xml" value="0.338768115942029" />
-        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_main.xml" value="0.35625" />
+        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_splash.xml" value="0.21603260869565216" />
+        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/activity_ubah_password.xml" value="0.3038949275362319" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/fragment_about.xml" value="0.32971014492753625" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/fragment_login.xml" value="0.338768115942029" />
@@ -30,6 +35,7 @@
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/fragment_register.xml" value="0.338768115942029" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/row_item.xml" value="0.33" />
         <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/layout/row_item_my_resep.xml" value="0.33" />
+        <entry key="..\:/TUGAS KULIAH/PMobile/Bagi-resep-UI/app/src/main/res/menu/button_nav_menu.xml" value="0.35625" />
       </map>
     </option>
   </component>

@@ -104,7 +104,7 @@ public class DataAdapterRow extends RecyclerView.Adapter<DataAdapterRow.ViewHold
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            keyword = itemView.findViewById(R.id.txt_keyword);
+            keyword = itemView.findViewById(R.id.txt_password_baru);
             judul = itemView.findViewById(R.id.txt_judul);
             deskripsi = itemView.findViewById(R.id.txt_deskripsi);
             imgEdit = itemView.findViewById(R.id.img_ubah);

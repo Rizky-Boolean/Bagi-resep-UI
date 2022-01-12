@@ -9,8 +9,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     card_view:cardUseCompatPadding="true"
-    card_view:cardElevation="5dp"
-    card_view:cardCornerRadius="15dp">
+    card_view:cardElevation="2dp"
+    android:layout_marginBottom="-2dp"
+    card_view:cardCornerRadius="10dp">
 
 
     <RelativeLayout
@@ -53,7 +54,7 @@
                     android:paddingEnd="80dp"/>
 
                 <TextView
-                    android:id="@+id/txt_keyword"
+                    android:id="@+id/txt_password_baru"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"

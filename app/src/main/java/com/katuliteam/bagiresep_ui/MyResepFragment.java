@@ -13,7 +13,6 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -47,7 +46,7 @@ public class MyResepFragment extends Fragment {
   ArrayList deskripsi_list;
 
   Intent intentDisplay;
-  ImageView imgTambah;
+//  ImageView imgTambah;
   TextView txtResult;
 
 
@@ -91,6 +90,8 @@ public class MyResepFragment extends Fragment {
     config = new DBConfig(getContext());
 
     txtResult = vw.findViewById(R.id.txt_result);
+    txtResult.setVisibility(View.GONE);
+    txtResult.setVisibility(View.INVISIBLE);
 
     keyword_list = new ArrayList<>();
     judul_list = new ArrayList<>();
@@ -138,13 +139,14 @@ public class MyResepFragment extends Fragment {
 
     }else{
       txtResult.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+      txtResult.setVisibility(View.VISIBLE);
     }
 
-    imgTambah = vw.findViewById(R.id.img_tambah_resep);
-    imgTambah.setOnClickListener(v -> {
-      intentDisplay = new Intent(getActivity(), AddActivity.class);
-      startActivity(intentDisplay);
-    });
+//    imgTambah = vw.findViewById(R.id.img_tambah_resep);
+//    imgTambah.setOnClickListener(v -> {
+//      intentDisplay = new Intent(getActivity(), AddActivity.class);
+//      startActivity(intentDisplay);
+//    });
 
     return vw;
   }

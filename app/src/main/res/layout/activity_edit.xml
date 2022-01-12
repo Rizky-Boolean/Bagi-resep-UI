@@ -51,7 +51,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginTop="15dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Judul :"
+            android:text="Judul"
             android:textColor="@color/htm1"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -81,7 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Deskripsi :"
+            android:text="Deskripsi"
             android:textColor="@color/htm1"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/txt_ubah_judul"
@@ -111,7 +111,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Bahan-bahan :"
+            android:text="Bahan-bahan"
             android:textColor="@color/htm1"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/txt_ubah_judul"
@@ -141,7 +141,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/poppins_medium"
-            android:text="Cara memasak :"
+            android:text="Cara memasak"
             android:textColor="@color/htm1"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/txt_ubah_judul"
@@ -180,7 +180,7 @@
       app:layout_constraintStart_toStartOf="parent"
       android:gravity="center_horizontal"
       android:paddingVertical="10dp"
-      android:background="@drawable/menu_bacground" >
+      android:background="@drawable/menu_background" >
 
 
     <Button
